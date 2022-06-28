@@ -1,5 +1,5 @@
 {
   "dependencies": {
-    "camelcase": "^7.0.0"
+    "camelcase": "^6.0.0"
   }
 }

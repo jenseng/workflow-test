@@ -25,7 +25,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node }}
-          cache: "npm"
+          cache: "yarn"
+
+      - name: 🤯 Is the yarn dir/config wrong?
+        run: yarn cache dir && yarn config list
 
       - name: 📥 Install deps
         uses: bahmutov/npm-install@v1
