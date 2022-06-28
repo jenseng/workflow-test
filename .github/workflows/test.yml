@@ -28,7 +28,7 @@ jobs:
           cache: "yarn"
 
       - name: 📥 Install deps
-        uses: bahmutov/npm-install@v1
+        uses: bahmutov/npm-install@v1.8.15
 
       - name: 🧪 Run Primary Tests
         run: "true"
