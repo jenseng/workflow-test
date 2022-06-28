@@ -1,5 +1,7 @@
 {
+  "name": "workflow-test",
+  "packageManager": "yarn@3.2.1",
   "dependencies": {
-    "camelcase": "^6.0.0"
+    "camelcase": "^7.0.0"
   }
 }

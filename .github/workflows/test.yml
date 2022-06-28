@@ -28,7 +28,7 @@ jobs:
           cache: "yarn"
 
       - name: 🤯 Is the yarn dir/config wrong?
-        run: yarn cache dir && yarn config list
+        run: yarn config
 
       - name: 📥 Install deps
         uses: bahmutov/npm-install@v1
