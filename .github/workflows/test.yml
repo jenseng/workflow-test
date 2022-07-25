@@ -5,6 +5,12 @@ on:
     branches:
       - main
 
+env:
+  lower_case: lOwEr
+  mixed_CASE: mixED
+  UPPER_CASE: uPpEr
+  "something_//weird.LOL:_ok": test
+
 jobs:
   test:
     name: "🧪 Test: (OS: ${{ matrix.os }} Node: ${{ matrix.node }})"
@@ -29,6 +35,9 @@ jobs:
 
       - name: 📥 Install deps
         run: yarn install --frozen-lockfile
+
+      - name: Output env
+        run: node -p process.env
 
       - name: 🧪 Run Primary Tests
         run: "true"
