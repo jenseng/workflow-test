@@ -9,7 +9,7 @@ env:
   lower_case: lOwEr
   mixed_CASE: mixED
   UPPER_CASE: uPpEr
-  "something_//weird.LOL:_ok": test
+  "something_//really-weird.LOL:_ok": test
   "dashy-DASH": lolDash
 
 jobs:
