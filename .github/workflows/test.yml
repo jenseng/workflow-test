@@ -18,7 +18,7 @@ jobs:
       fail-fast: false
       matrix:
         os:
-          - ubuntu-latest
+          # - ubuntu-latest
           - windows-latest
         node:
           - 18
@@ -38,6 +38,9 @@ jobs:
 
       - name: Output env
         run: node -p process.env
+
+      - name: Output env 2
+        run: cmd.exe /c test.bat
 
       - name: 🧪 Run Primary Tests
         run: "true"
