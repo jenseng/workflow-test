@@ -37,7 +37,7 @@ jobs:
         run: yarn install --frozen-lockfile
 
       - name: Output env
-        run: node -p process.env
+        run: node -p process.env && node -p process.env.mixed_CASE && node -p process.env.mixed_case
 
       - name: Output env 2
         run: cmd.exe /c test.bat
